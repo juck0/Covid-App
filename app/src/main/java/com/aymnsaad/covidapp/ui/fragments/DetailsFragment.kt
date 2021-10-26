@@ -1,10 +1,10 @@
-package com.aymnsaad.covideapp.ui.fragments
+package com.aymnsaad.covidapp.ui.fragments
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.transition.TransitionManager
-import com.aymnsaad.covideapp.databinding.FragmentDetailsBinding
+import com.aymnsaad.covidapp.databinding.FragmentDetailsBinding
 
 
 class DetailsFragment: BaseFragment<FragmentDetailsBinding>() {

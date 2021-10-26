@@ -1,4 +1,4 @@
-package com.aymnsaad.covideapp
+package com.aymnsaad.covidapp
 
 import org.junit.Test
 

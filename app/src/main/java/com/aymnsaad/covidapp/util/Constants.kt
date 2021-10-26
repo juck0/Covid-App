@@ -1,4 +1,4 @@
-package com.aymnsaad.covideapp.util
+package com.aymnsaad.covidapp.util
 
 object Constants {
     object ColumnIndex{

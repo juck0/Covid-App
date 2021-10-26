@@ -1,8 +1,8 @@
-package com.aymnsaad.covideapp.ui.fragments
+package com.aymnsaad.covidapp.ui.fragments
 
 import android.view.LayoutInflater
-import com.aymnsaad.covideapp.data.DataManger
-import com.aymnsaad.covideapp.databinding.FragmentVaccinationBinding
+import com.aymnsaad.covidapp.data.DataManger
+import com.aymnsaad.covidapp.databinding.FragmentVaccinationBinding
 
 class VaccinationFragment: BaseFragment<FragmentVaccinationBinding>() {
     override val LOG_TAG: String = "Vaccination Activity"

@@ -1,15 +1,14 @@
-package com.aymnsaad.covideapp.ui.activity
+package com.aymnsaad.covidapp.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.aymnsaad.covideapp.R
-import com.aymnsaad.covideapp.data.DataManger
-import com.aymnsaad.covideapp.databinding.ActivityHomeBinding
-import com.aymnsaad.covideapp.ui.fragments.*
-import com.example.covidapple.ui.fragments.*
-import com.aymnsaad.covideapp.util.CsvParser
-import com.aymnsaad.covideapp.util.log
+import com.aymnsaad.covidapp.R
+import com.aymnsaad.covidapp.data.DataManger
+import com.aymnsaad.covidapp.ui.fragments.*
+import com.aymnsaad.covidapp.databinding.ActivityHomeBinding
+import com.aymnsaad.covidapp.util.CsvParser
+import com.aymnsaad.covidapp.util.log
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -66,8 +65,6 @@ class HomeActivity : AppCompatActivity() {
             DataManger.addVaccine(vaccine)
         }
         DataManger.getTotalVaccinatedForAllCountries().log()
-//        DataManger.getTotalVaccinationForCountry("iraq").log()
-//        DataManger.getTotalVaccinationForAllCountries().log()
 
     }
 

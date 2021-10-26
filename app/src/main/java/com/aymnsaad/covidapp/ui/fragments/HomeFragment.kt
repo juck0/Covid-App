@@ -1,10 +1,10 @@
-package com.aymnsaad.covideapp.ui.fragments
+package com.aymnsaad.covidapp.ui.fragments
 
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
-import com.aymnsaad.covideapp.data.domain.Data
-import com.aymnsaad.covideapp.databinding.FragmentHomeBinding
+import com.aymnsaad.covidapp.data.domain.Data
+import com.aymnsaad.covidapp.databinding.FragmentHomeBinding
 import com.example.covidapple.data.domain.TopCountries
 
 class HomeFragment: BaseFragment<FragmentHomeBinding>() {

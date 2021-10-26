@@ -1,11 +1,11 @@
-package com.aymnsaad.covideapp.ui.fragments
+package com.aymnsaad.covidapp.ui.fragments
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.SearchView
-import com.aymnsaad.covideapp.data.DataManger
-import com.aymnsaad.covideapp.databinding.FragmentSearchBinding
+import com.aymnsaad.covidapp.data.DataManger
+import com.aymnsaad.covidapp.databinding.FragmentSearchBinding
 import org.eazegraph.lib.models.PieModel
 import kotlin.random.Random
 

@@ -1,4 +1,4 @@
-package com.aymnsaad.covideapp.util
+package com.aymnsaad.covidapp.util
 
 import com.example.covidapple.data.domain.Vaccine
 

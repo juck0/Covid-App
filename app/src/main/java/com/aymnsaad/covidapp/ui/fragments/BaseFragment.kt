@@ -1,4 +1,4 @@
-package com.aymnsaad.covideapp.ui.fragments
+package com.aymnsaad.covidapp.ui.fragments
 
 import android.os.Bundle
 import android.util.Log

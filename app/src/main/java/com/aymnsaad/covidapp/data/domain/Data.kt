@@ -1,4 +1,4 @@
-package com.aymnsaad.covideapp.data.domain
+package com.aymnsaad.covidapp.data.domain
 
 enum class Data (val v:String){
     CONFIRMED("211M"),
