@@ -1,3 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Covide App</string>
+    <string name="app_name">CovidApple</string>
+    <string name="last_updated">Last updated: August 13,2021</string>
+    <string name="global_update">Global update</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="recover">recover</string>
+    <string name="deaths">Deaths</string>
+    <string name="homepage">Home</string>
+    <string name="search">Search</string>
+    <string name="info">Info</string>
+    <string name="see_more" translatable="false">Learn more about COVID_19 \n #StayHome</string>
+    <string name="learn_more">learn more</string>
+    <string name="top_countries">Top countries</string>
+    <string name="covid_app">Covid App\n By Green Apple Team</string>
+    <string name="france">France</string>
+    <string name="italy">Italy</string>
+    <string name="turkey">Turkey</string>
+    <string name="russia">Russia</string>
+    <string name="india">India</string>
+    <string name="zero">0</string>
+    <string name="num_of_confirmed">895</string>
+    <string name="num_of_deaths">895</string>
+    <string name="num_of_recover">895</string>
+    <string name="question_text">Do you need help? \nCOVID-19</string>
+    <string name="Symptoms">COVID-19 Symptoms \n\n 1- Fever or chills Cough \n 2-Shortness of breath or difficulty breathing Fatigue \n 3- Muscle or body aches \n 4-Headache \n 5- New loss of taste or smell \n 6- Sore throat \n 7- Congestion or runny nose \n 8- Nausea or vomiting Diarrhea</string>
+    <string name="prevention">COVID-19 prevention\n\n 1. Wash your hands frequently and \n carefully \n 2. Avoid touching your face \n 3. Stop shaking hands and hugging people — for now \n 4. Don’t share personal items \n 5. Cover your mouth and nose when you cough and sneeze \n 6. Clean and disinfect surfaces</string>
+    <string name="pfizer">Pfizer</string>
+    <string name="astrazeneca">AstraZeneca</string>
+    <string name="my_team">Green Apple Team</string>
+    <string name="read_more">Read more</string>
+    <string name="sinopharm">sinopharm</string>
+    <string name="johnson_and_johnson"><![CDATA[Johnson & Johnson]]></string>
+    <string name="moderna">Moderna</string>
+    <string name="types_of_vaccinations">types of vaccinations</string>
+    <string name="project_description">This project is brought to you by\ngreen apple Team</string>
+    <string name="name_ibrahim">Ibrahim Al-Zaidi</string>
+    <string name="team_leader_description">Team leader of Apple team</string>
+    <string name="name_ayman">Aymn S. Al-Arrak</string>
+    <string name="team_member_description">Team Member of Apple team</string>
+    <string name="name_rafal">Rafal A</string>
+    <string name="name_basheer">Basheer Sameer</string>
+    <string name="name_huda">Huda Al_janaby</string>
+    <string name="credits">Credits</string>
+    <string name="countries_daily_vaccinations">Countries Daily Vaccinations</string>
+
+
 </resources>

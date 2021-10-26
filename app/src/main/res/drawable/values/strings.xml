@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CovidApple</string>
+    <string name="last_updated">Last updated: August 13,2021</string>
+    <string name="global_update">Global update</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="recover">recover</string>
+    <string name="deaths">Deaths</string>
+    <string name="homepage">homePage</string>
+    <string name="search">search</string>
+    <string name="info">info</string>
+
+
+</resources>

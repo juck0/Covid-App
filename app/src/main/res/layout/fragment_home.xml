@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_dark">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/covid_app"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/x2_big_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:textSize="@dimen/small_than_normal_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/hero_image"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_white_shape"
+        android:padding="@dimen/small_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:background="@color/black"
+            app:cardCornerRadius="@dimen/small_card_radius"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_doctor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/super_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/see_more"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reed_me_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:onClick="addCallBack"
+                android:elevation="24dp"
+                android:layout_marginStart="@dimen/super_margin"
+                android:layout_marginTop="@dimen/x2_big_margin"
+                android:background="@drawable/rec_green_shape"
+                android:text="@string/learn_more"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/global_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="@string/global_update"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/confirm_card"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            app:cardCornerRadius="@dimen/small_card_radius"
+            app:cardElevation="@dimen/small_elevation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/global_textview">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/confirmed_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/confirmed"
+                    android:textColor="@color/green_dark"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/confirmed_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/small_than_normal_text_size" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recover_card"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:cardCornerRadius="@dimen/small_card_radius"
+            app:cardElevation="@dimen/small_elevation"
+            app:layout_constraintBottom_toBottomOf="@+id/confirm_card"
+            app:layout_constraintEnd_toStartOf="@+id/deaths_card"
+            app:layout_constraintStart_toEndOf="@+id/confirm_card"
+            app:layout_constraintTop_toTopOf="@+id/confirm_card">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recover_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/recover"
+                    android:textColor="@color/green_dark"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/recover_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/small_than_normal_text_size" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/deaths_card"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:cardCornerRadius="@dimen/small_card_radius"
+            app:cardElevation="@dimen/small_elevation"
+            app:layout_constraintBottom_toBottomOf="@+id/confirm_card"
+            app:layout_constraintEnd_toEndOf="@+id/global_textview"
+            app:layout_constraintTop_toTopOf="@+id/confirm_card">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/deaths_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deaths"
+                    android:textColor="@color/green_dark"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deaths_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/small_than_normal_text_size" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/last_update_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_padding"
+            android:text="@string/last_updated"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/global_textview"
+            app:layout_constraintStart_toStartOf="@+id/global_textview"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_card" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_update_text" />
+
+        <TextView
+            android:id="@+id/top_countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/top_countries"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/last_update_text"
+            app:layout_constraintStart_toStartOf="@+id/last_update_text"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            app:layout_constraintEnd_toEndOf="@+id/last_update_text"
+            app:layout_constraintStart_toStartOf="@+id/last_update_text"
+            app:layout_constraintTop_toBottomOf="@+id/top_countries"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/first_country_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/rec_green_shape"
+                    app:cardCornerRadius="@dimen/small_card_radius"
+                    app:cardElevation="@dimen/small_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_green_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/normal_padding">
+
+                        <TextView
+                            android:id="@+id/first_country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/france"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:id="@+id/first_country_flag"
+                            android:layout_width="48dp"
+                            android:layout_gravity="center"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_french_flag"
+                            android:textColor="@color/teal_200"
+                            />
+
+                        <TextView
+                            android:id="@+id/first_country_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/zero"
+                            android:elevation="@dimen/small_elevation"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/second_country_card"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/rec_green_shape"
+                    app:cardCornerRadius="@dimen/small_card_radius"
+                    app:cardElevation="@dimen/small_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_green_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/normal_padding">
+
+                        <TextView
+                            android:id="@+id/second_country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/italy"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/second_country_flag"
+                            android:layout_width="48dp"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_gravity="center"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_italy" />
+
+                        <TextView
+                            android:id="@+id/second_country_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/third_country_card"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/rec_green_shape"
+                    app:cardCornerRadius="@dimen/small_card_radius"
+                    app:cardElevation="@dimen/small_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_green_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/normal_padding">
+
+                        <TextView
+                            android:id="@+id/third_country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/turkey"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/third_country_flag"
+                            android:layout_width="48dp"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_eer_flag_of_turkey"
+                          />
+                        <TextView
+                            android:id="@+id/third_country_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fourth_country_card"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:background="@drawable/rec_green_shape"
+                    app:cardCornerRadius="@dimen/small_card_radius"
+                    app:cardElevation="@dimen/small_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_green_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/normal_padding">
+
+                        <TextView
+                            android:id="@+id/fourth_country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/russia"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/fourth_country_flag"
+                            android:layout_width="48dp"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_flag_of_russia_2016081417"
+                         />
+
+                        <TextView
+                            android:id="@+id/fourth_country_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fifth_country_card"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/small_margin"
+                    app:cardCornerRadius="@dimen/small_card_radius"
+                    app:cardElevation="@dimen/small_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_green_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/normal_padding">
+
+                        <TextView
+                            android:id="@+id/fifth_country_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/india"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/fifth_country_flag"
+                            android:layout_width="48dp"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_flag_of_india" />
+
+                        <TextView
+                            android:id="@+id/fifth_country_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
