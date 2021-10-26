@@ -11,7 +11,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:name="com.example.covidapple.ui.fragments.HomeFragment"
+        android:name="com.aymnsaad.covideapp.ui.fragments.HomeFragment"
         app:layout_constraintBottom_toTopOf="@id/navigation_bar"
         app:layout_constraintTop_toTopOf="parent" />
 
