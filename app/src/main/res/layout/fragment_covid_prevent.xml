@@ -11,8 +11,8 @@
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/myindecator"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#662148BD"
+        android:layout_height="30dp"
+        android:background="#236C76"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -29,7 +29,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/nextPic"
         android:layout_width="210dp"
-        android:layout_height="160dp"
+        android:layout_height="120dp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@id/myindecator"
         app:layout_constraintEnd_toEndOf="parent"
