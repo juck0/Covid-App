@@ -11,8 +11,6 @@ import com.aymnsaad.covidapp.databinding.FragmentDetailsBinding
 
 class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
 
-    private val covidPreventFragment = CovidPreventFragment()
-
     override val LOG_TAG: String = "Info Fragment"
     override val bindingInflater: (LayoutInflater) -> FragmentDetailsBinding
         get() = FragmentDetailsBinding::inflate

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf6ff"
+    tools:context=".ui.fragments.vaccineTypeFragments.PfizerFragment"
+    app:layoutDescription="@xml/fragment_pfizer_scene">
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/newphoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vizor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="Pfizer"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/vaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratextrabold"
+        android:text="vaccine"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <LinearLayout
+        android:id="@+id/firstLinear"
+        android:layout_width="210dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shapelinearphizor"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linearTow"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="manufactured"
+            android:textColor="@color/graynormal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="usa_germany"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="license_in_use"
+            android:textColor="#80322F2F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="emergency_use_auth"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="dosage_form"
+            android:textColor="#80322F2F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="injection"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="dosage"
+            android:textColor="#80322F2F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratblackbold"
+            android:text="_0_3_ml"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTow"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shapelinearphizor"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstLinear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/firstLinear"
+        app:layout_constraintTop_toTopOf="@id/firstLinear" />
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shapecardphizor"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/linearTow"
+        app:layout_constraintEnd_toEndOf="@id/linearTow"
+        app:layout_constraintStart_toStartOf="@id/linearTow" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiLayout"
+        android:layout_width="0dp"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toBottomOf="@id/View1"
+        app:layout_constraintEnd_toEndOf="@id/View1"
+        app:layout_constraintStart_toStartOf="@id/View1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bdbdbd" />
+
+    <TextView
+        android:id="@+id/textVieweffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:fontFamily="@font/lorasemibold"
+        android:text="efficacy"
+        android:textColor="@color/graynormal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/linearTow"
+        app:layout_constraintStart_toStartOf="@id/linearTow"
+        app:layout_constraintTop_toTopOf="@id/linearTow"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/lorasemibold"
+        android:text="95%"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/linearTow"
+        app:layout_constraintEnd_toEndOf="@id/linearTow"
+        app:layout_constraintStart_toStartOf="@id/linearTow"
+        app:layout_constraintTop_toBottomOf="@id/textVieweffic"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

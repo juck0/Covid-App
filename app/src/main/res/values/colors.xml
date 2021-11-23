@@ -17,4 +17,5 @@
     <color name="color_dark">#236C76</color>
     <color name="search_color">#59F436</color>
     <color name="gray">#efefef</color>
+    <color name="graynormal">#80322F2F</color>
 </resources>
