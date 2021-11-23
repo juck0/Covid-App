@@ -9,7 +9,6 @@ import com.aymnsaad.covidapp.ui.fragments.*
 import com.aymnsaad.covidapp.databinding.ActivityHomeBinding
 import com.aymnsaad.covidapp.util.CsvParser
 import com.aymnsaad.covidapp.util.log
-import nl.joery.animatedbottombar.AnimatedBottomBar
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
