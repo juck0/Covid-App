@@ -19,4 +19,10 @@
         <item name="android:windowBackground">@drawable/splash_screen</item>
         <item name="android:statusBarColor">@color/black</item>
     </style>
+    <style name="NavigationCustomText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/frankruhllibremedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>

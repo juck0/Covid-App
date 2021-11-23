@@ -27,5 +27,4 @@
         app:menu="@menu/main_button_nav" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
