@@ -11,6 +11,7 @@
     <color name="background_color">#ffffff</color>
     <color name="blue">#0E95F6</color>
     <color name="green">#0DD345</color>
+    <color name="light_blue">#edf6ff</color>
     <color name="pink">#f8477f</color>
     <color name="green_dark">#236C76</color>
     <color name="red">#E53935</color>
