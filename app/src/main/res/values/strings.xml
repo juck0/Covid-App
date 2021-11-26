@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApple</string>
+    <string name="app_name">Covid App</string>
     <string name="last_updated">Last updated: August 13,2021</string>
     <string name="global_update">Global update</string>
     <string name="confirmed">Confirmed</string>
@@ -12,7 +12,7 @@
     <string name="see_more" translatable="false">Learn more about COVID_19 \n #StayHome</string>
     <string name="learn_more">learn more</string>
     <string name="top_countries">Top countries</string>
-    <string name="covid_app">Covid App\n By Green Apple Team</string>
+    <string name="covid_app">Covid App</string>
     <string name="france">France</string>
     <string name="italy">Italy</string>
     <string name="turkey">Turkey</string>
@@ -33,18 +33,13 @@
     <string name="johnson_and_johnson"><![CDATA[Johnson & Johnson]]></string>
     <string name="moderna">Moderna</string>
     <string name="types_of_vaccinations">types of vaccinations</string>
-    <string name="project_description">This project is brought to you by\ngreen apple Team</string>
-    <string name="name_ibrahim">Ibrahim Al-Zaidi</string>
-    <string name="team_leader_description">Team leader of Apple team</string>
-    <string name="name_ayman">Aymn S. Al-Arrak</string>
-    <string name="team_member_description">Team Member of Apple team</string>
-    <string name="name_rafal">Rafal A</string>
-    <string name="name_basheer">Basheer Sameer</string>
-    <string name="name_huda">Huda Al_janaby</string>
+    <string name="project_description">This project is brought to you by\n Efficient programmers</string>
+    <string name="name_aymn">Aymn S. Al-Arrak</string>
     <string name="credits">Credits</string>
     <string name="countries_daily_vaccinations">Countries Daily Vaccinations</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_Enas">Dr.Enas Alamiry</string>
 
 
 </resources>

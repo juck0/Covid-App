@@ -17,26 +17,16 @@ class InfoFragment: BaseFragment<FragmentInfoBinding>() {
 
     override fun addCallBack() {
         var url:String
-        binding?.buttonGithubRafal?.setOnClickListener{
+        binding?.buttonGithubEnas?.setOnClickListener{
                 url="https://github.com/Rafal-a"
                 gitHubAccount(url)
-        }
-        binding?.buttonGithubIbrahim?.setOnClickListener {
-            url = "https://github.com/IbrahimAlzaidi"
-            gitHubAccount(url)
         }
         binding?.buttonGithubAymn?.setOnClickListener {
             url = "https://github.com/juck0"
             gitHubAccount(url)
         }
-        binding?.buttonGithubBasheer?.setOnClickListener {
-            url = "https://github.com/basheer574"
-            gitHubAccount(url)
-        }
-        binding?.buttonGithubHuda?.setOnClickListener {
-            url = "https://github.com/huda997"
-            gitHubAccount(url)
-        }
+
+
     }
     private fun gitHubAccount(url:String){
         var intent = Intent(Intent.ACTION_VIEW)
