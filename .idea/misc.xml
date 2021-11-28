@@ -6,12 +6,14 @@
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/drawable-v24/social_media_shape.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/drawable/ic_search.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/drawable/navigation_shape.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/drawable/rec_green_shape.xml" value="0.240625" />
+        <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/drawable/rec_white_shape.xml" value="0.240625" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/activity_home.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_covid_prevent.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_details.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_info.xml" value="0.25" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_search.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/jucko/Desktop/gard/app/src/main/res/layout/fragment_vaccination.xml" value="0.22447916666666667" />

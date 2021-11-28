@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="@dimen/x2_big_margin"
+        android:layout_marginTop="@dimen/big_margin"
         android:text="@string/covid_app"
         android:textColor="@color/white"
         android:textSize="32sp"
@@ -45,10 +45,9 @@
             android:id="@+id/cardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginTop="18dp"
             android:background="@color/black"
             app:cardCornerRadius="@dimen/small_card_radius"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -86,7 +85,7 @@
             android:id="@+id/global_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="@dimen/normal_margin"
             android:text="@string/global_update"
             android:textColor="@color/black"
@@ -218,7 +217,7 @@
             android:paddingTop="@dimen/small_padding"
             android:text="@string/last_updated"
             android:textColor="@color/black"
-            android:textSize="@dimen/small_text_size"
+            android:textSize="12dp"
             app:layout_constraintEnd_toEndOf="@+id/global_textview"
             app:layout_constraintStart_toStartOf="@+id/global_textview"
             app:layout_constraintTop_toBottomOf="@+id/confirm_card" />
@@ -228,7 +227,7 @@
             android:id="@+id/view"
             android:layout_width="wrap_content"
             android:layout_height="1dp"
-            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginTop="2dp"
             android:background="@color/teal_700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -238,11 +237,11 @@
             android:id="@+id/top_countries"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/small_margin"
             android:text="@string/top_countries"
             android:textColor="@color/black"
             android:textSize="@dimen/normal_text_size"
             app:layout_constraintEnd_toEndOf="@+id/last_update_text"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/last_update_text"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -250,7 +249,6 @@
             android:id="@+id/horizontalScrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/small_margin"
             android:scrollbars="none"
             app:layout_constraintEnd_toEndOf="@+id/last_update_text"
             app:layout_constraintStart_toStartOf="@+id/last_update_text"
@@ -264,7 +262,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/first_country_card"
                     android:layout_width="wrap_content"
-                    android:layout_height="140dp"
+                    android:layout_height="130dp"
                     android:layout_marginStart="@dimen/small_margin"
                     android:background="@drawable/rec_green_shape"
                     app:cardCornerRadius="@dimen/small_card_radius"
@@ -312,7 +310,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/second_country_card"
                     android:layout_width="100dp"
-                    android:layout_height="140dp"
+                    android:layout_height="130dp"
                     android:layout_marginStart="@dimen/small_margin"
                     android:background="@drawable/rec_green_shape"
                     app:cardCornerRadius="@dimen/small_card_radius"
@@ -358,7 +356,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/third_country_card"
                     android:layout_width="100dp"
-                    android:layout_height="140dp"
+                    android:layout_height="130dp"
                     android:layout_marginStart="@dimen/small_margin"
                     android:background="@drawable/rec_green_shape"
                     app:cardCornerRadius="@dimen/small_card_radius"
@@ -403,7 +401,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fourth_country_card"
                     android:layout_width="100dp"
-                    android:layout_height="140dp"
+                    android:layout_height="130dp"
                     android:layout_marginStart="@dimen/small_margin"
                     android:background="@drawable/rec_green_shape"
                     app:cardCornerRadius="@dimen/small_card_radius"
@@ -448,7 +446,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fifth_country_card"
                     android:layout_width="100dp"
-                    android:layout_height="140dp"
+                    android:layout_height="130dp"
                     android:layout_marginStart="@dimen/small_margin"
                     app:cardCornerRadius="@dimen/small_card_radius"
                     app:cardElevation="@dimen/small_elevation">
