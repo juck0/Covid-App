@@ -9,6 +9,7 @@ import com.aymnsaad.covidapp.ui.fragments.*
 import com.aymnsaad.covidapp.databinding.ActivityHomeBinding
 import com.aymnsaad.covidapp.util.CsvParser
 import com.aymnsaad.covidapp.util.log
+import io.ak1.OnBubbleClickListener
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -36,22 +37,34 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun addNavigationListener() {
-        binding.navigationBar.setOnItemSelectedListener { item ->
-            replaceFragment(
-                when(item.itemId){
-                    R.id.nav_home -> fragmentHome
-                    R.id.nav_info -> fragmentInfo
-                    R.id.nav_search -> fragemntSearch
-                    R.id.nav_details -> vaccineTypeFragment
-                    R.id.nav_Tips -> covidPreventFragment
-                    else -> return@setOnItemSelectedListener  false
-                }
-            )
-            return@setOnItemSelectedListener true
-        }
+//        binding.navigationBar.setOnItemSelectedListener { item ->
+//            replaceFragment(
+//                when(item.itemId){
+//                    R.id.nav_home -> fragmentHome
+//                    R.id.nav_info -> fragmentInfo
+//                    R.id.nav_search -> fragemntSearch
+//                    R.id.nav_details -> vaccineTypeFragment
+//                    R.id.nav_Tips -> covidPreventFragment
+//                    else -> return@setOnItemSelectedListener  false
+//                }
+//            )
+//            return@setOnItemSelectedListener true
+//        }
+        binding.navigationBar.addBubbleListener(object : OnBubbleClickListener {
+            override fun onBubbleClick(id: Int) {
+                replaceFragment(
+                    when (id) {
+                        R.id.nav_home -> fragmentHome
+                        R.id.nav_info -> fragmentInfo
+                        R.id.nav_search -> fragemntSearch
+                        R.id.nav_details -> vaccineTypeFragment
+                        R.id.nav_Tips -> covidPreventFragment
+                        else -> return
+                    }
+                )
+            }
+        })
     }
-
-
 
 
     private fun replaceFragment(newFragment: Fragment) {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    >
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_baseline_home_24"
@@ -9,18 +8,22 @@
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/ic_search"
-        android:title="@string/search" />
+        android:title="@string/search"
+        android:color="@color/blue"/>
 
     <item
         android:id="@+id/nav_details"
         android:icon="@drawable/ic_syringe"
-        android:title="Details" />
+        android:title="Details"
+        android:color="#5FA5D8"/>
     <item
         android:id="@+id/nav_Tips"
         android:icon="@drawable/ic_list"
-        android:title="Tips" />
+        android:title="Tips"
+        android:color="#1C4C2A"/>
     <item
         android:id="@+id/nav_info"
         android:icon="@drawable/ic_info"
-        android:title="@string/info" />
+        android:title="@string/info"
+        android:color="#E3DDDD"/>
 </menu>
